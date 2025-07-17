@@ -38,7 +38,6 @@ It highlights how correlation measures behave under different data relationships
 ) | ![X² Plot](<img width="590" height="390" alt="image" src="https://github.com/user-attachments/assets/9c802d95-c27b-46ff-b38e-a395da554b5c" />
 ) |
 
-> 💡 Replace `images/x_cubed_plot.png` and `x_squared_plot.png` with your actual plot image files.
 
 ---
 
