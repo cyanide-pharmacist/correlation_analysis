@@ -34,7 +34,7 @@ It highlights how correlation measures behave under different data relationships
 
 | Monotonic Non-Linear (`Y = X³`) | Non-Monotonic (`Y = X²`) |
 |----------------------------------|----------------------------|
-| <img width="590" height="390" alt="image" src="https://github.com/user-attachments/assets/df97c682-a362-4574-8b97-1535233afe49" /> | (<img width="590" height="390" alt="image" src="https://github.com/user-attachments/assets/9c802d95-c27b-46ff-b38e-a395da554b5c" /> |
+| <img width="590" height="390" alt="image" src="https://github.com/user-attachments/assets/df97c682-a362-4574-8b97-1535233afe49" /> | <img width="590" height="390" alt="image" src="https://github.com/user-attachments/assets/9c802d95-c27b-46ff-b38e-a395da554b5c" /> |
 
 
 ---
