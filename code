@@ -1,28 +1,25 @@
 import numpy as np
-import pandas as pd
 import matplotlib.pyplot as plt
 from scipy.stats import pearsonr, spearmanr, kendalltau
 
-# Example 1: Monotonic Non-linear (Y = X^3)
+# Example 1: Y = X³
 X1 = np.linspace(-10, 10, 100)
-Y1 = X1**3
+Y1 = X1 ** 3
 
-# Example 2: Non-monotonic (Y = X^2)
+# Example 2: Y = X²
 X2 = np.array([-2, -1, 0, 1, 2])
-Y2 = X2**2
+Y2 = X2 ** 2
 
-# --- Correlation Calculations ---
-# Example 1
+# Correlation calculations
 pearson1, _ = pearsonr(X1, Y1)
 spearman1, _ = spearmanr(X1, Y1)
 kendall1, _ = kendalltau(X1, Y1)
 
-# Example 2
 pearson2, _ = pearsonr(X2, Y2)
 spearman2, _ = spearmanr(X2, Y2)
 kendall2, _ = kendalltau(X2, Y2)
 
-# --- Print Results ---
+# Print correlation results
 print("=== Example 1: Y = X^3 (Monotonic Non-linear) ===")
 print(f"Pearson correlation:  {pearson1:.4f}")
 print(f"Spearman correlation: {spearman1:.4f}")
@@ -33,20 +30,22 @@ print(f"Pearson correlation:  {pearson2:.4f}")
 print(f"Spearman correlation: {spearman2:.4f}")
 print(f"Kendall correlation:  {kendall2:.4f}")
 
-# --- Visualization ---
-plt.figure(figsize=(12, 5))
-
-plt.subplot(1, 2, 1)
+# Show Plot 1: Y = X³
+plt.figure(figsize=(6, 4))
 plt.plot(X1, Y1)
-plt.title('Y = X³ (Monotonic)')
+plt.title('Y = X³ (Monotonic Non-linear)')
 plt.xlabel('X')
 plt.ylabel('Y')
+plt.grid(True)
+plt.tight_layout()
+plt.show()
 
-plt.subplot(1, 2, 2)
+# Show Plot 2: Y = X²
+plt.figure(figsize=(6, 4))
 plt.scatter(X2, Y2, color='orange')
 plt.title('Y = X² (Non-monotonic)')
 plt.xlabel('X')
 plt.ylabel('Y')
-
+plt.grid(True)
 plt.tight_layout()
 plt.show()
